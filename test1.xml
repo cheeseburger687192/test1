@@ -1,36 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="258" x="-54" y="-23">
     <next>
-      <block type="movement_leftmotor" id="460" inline="true">
-        <value name="MOVLEFT">
-          <block type="math_number" id="467">
-            <field name="NUM">100</field>
+      <block type="controls_whileUntil" id="572" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_number" id="579">
+            <field name="NUM">3000</field>
           </block>
         </value>
+        <statement name="DO">
+          <block type="movement_forward" id="645"></block>
+        </statement>
         <next>
-          <block type="movement_rightmotor" id="479" inline="true">
-            <value name="MOVRIGHT">
-              <block type="math_number" id="486">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-            <next>
-              <block type="controls_whileUntil" id="572" inline="false">
-                <field name="MODE">WHILE</field>
-                <value name="NUMBER">
-                  <block type="math_number" id="579">
-                    <field name="NUM">3000</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="movement_forward" id="645"></block>
-                </statement>
-                <next>
-                  <block type="movement_stop" id="589"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_stop" id="589"></block>
         </next>
       </block>
     </next>

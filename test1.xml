@@ -15,7 +15,17 @@
               </block>
             </value>
             <next>
-              <block type="movement_reverse" id="512"></block>
+              <block type="controls_whileUntil" id="572" inline="false">
+                <field name="MODE">UNTIL</field>
+                <value name="NUMBER">
+                  <block type="math_number" id="579">
+                    <field name="NUM">3000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="589"></block>
+                </next>
+              </block>
             </next>
           </block>
         </next>

@@ -5,7 +5,7 @@
         <field name="MODE">WHILE</field>
         <value name="NUMBER">
           <block type="math_number" id="579">
-            <field name="NUM">2</field>
+            <field name="NUM">1</field>
           </block>
         </value>
         <statement name="DO">

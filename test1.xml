@@ -7,10 +7,11 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="645"></block>
+      <block type="movement_forward" id="645">
+        <next>
+          <block type="movement_stop" id="697"></block>
+        </next>
+      </block>
     </statement>
-    <next>
-      <block type="movement_stop" id="589"></block>
-    </next>
   </block>
 </xml>

@@ -1,16 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="572" inline="false" x="-54" y="3">
-    <field name="MODE">WHILE</field>
-    <value name="NUMBER">
-      <block type="math_number" id="579">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="movement_forward" id="645"></block>
-    </statement>
+  <block type="movement_forward" id="645" x="-60" y="-20">
     <next>
-      <block type="movement_stop" id="589"></block>
+      <block type="controls_whileUntil" id="572" inline="false">
+        <field name="MODE">WHILE</field>
+        <value name="NUMBER">
+          <block type="math_number" id="667">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="movement_stop" id="589"></block>
+        </statement>
+      </block>
     </next>
   </block>
 </xml>

@@ -10,7 +10,7 @@
       <block type="movement_forward" id="3"></block>
     </statement>
     <next>
-      <block type="movement_stop" id="5"></block>
+      <block type="movement_stop" id="4"></block>
     </next>
   </block>
 </xml>
